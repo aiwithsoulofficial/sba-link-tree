@@ -189,6 +189,19 @@
   .stack-item h4{font-size:1.02rem;color:var(--eucalyptus-dark);margin-bottom:4px;}
   .stack-item .brand{font-size:.76rem;color:var(--hibiscus);font-weight:600;letter-spacing:.02em;margin-bottom:8px;}
   .stack-item p{font-size:.88rem;margin-bottom:0;color:var(--charcoal);}
+  .stack-item h4 a{color:var(--eucalyptus-dark);text-decoration:none;border-bottom:2px solid var(--sand);transition:border-color .15s;}
+  .stack-item h4 a:hover{border-color:var(--eucalyptus);}
+  a.stack-item{text-decoration:none;color:inherit;display:block;transition:transform .15s,box-shadow .15s;}
+  a.stack-item:hover{transform:translateY(-3px);box-shadow:0 10px 26px rgba(84,96,92,.16);}
+  a.stack-item h4{color:var(--eucalyptus-dark);}
+  a.stack-item h4::after{content:" \2197";font-size:.8rem;color:var(--eucalyptus);}
+
+  /* REPLAY VIDEO */
+  .video-wrap{max-width:920px;margin:0 auto;border-radius:14px;overflow:hidden;
+    box-shadow:0 16px 44px rgba(0,0,0,.32);background:#000;}
+  .video-wrap video{width:100%;display:block;background:#000;}
+  .video-fallback{text-align:center;margin-top:16px;font-size:.9rem;color:var(--sand);}
+  .video-fallback a{color:var(--white);text-decoration:underline;}
 
   /* OFFER */
   .offer{display:grid;grid-template-columns:1.55fr 1fr;border-radius:18px;overflow:hidden;
@@ -317,6 +330,23 @@
   </div>
 </section>
 
+<!-- ===================== REPLAY ===================== -->
+<section class="eucalyptus" id="replay">
+  <div class="wrap">
+    <div class="section-head">
+      <div class="kicker">Catch The Whole Thing</div>
+      <h2>Watch the Replay</h2>
+      <p>The full workshop, start to finish. Press play and settle in - everything I talk through is unpacked below, with all the links.</p>
+    </div>
+    <div class="video-wrap">
+      <video controls preload="metadata" playsinline poster="workshop-images/replay-poster.jpg">
+        <source src="https://www.dropbox.com/scl/fi/a1q0fyf011xdtovbl9dph/GLP1-Workshop-Full-Recording.mp4?rlkey=1s2lne43jgxdmirs9gfql3a29&amp;raw=1" type="video/mp4">
+      </video>
+    </div>
+    <p class="video-fallback">Video not loading? <a href="https://www.dropbox.com/scl/fi/a1q0fyf011xdtovbl9dph/GLP1-Workshop-Full-Recording.mp4?rlkey=1s2lne43jgxdmirs9gfql3a29&amp;dl=0" target="_blank" rel="noopener">Watch it on Dropbox &rarr;</a></p>
+  </div>
+</section>
+
 <!-- ===================== MY STORY ===================== -->
 <section class="cream">
   <div class="wrap">
@@ -442,7 +472,23 @@
       <p>Semaglutide and Tirzepatide follow the standard "start low, go slow" titration - begin at the lowest dose and only step up monthly if you need to. Retatrutide (Radiant Sculpt) climbs through <em>2 &rarr; 4 &rarr; 6 &rarr; 8 &rarr; 10 &rarr; 12 mg</em>, starting at 2mg.</p>
       <p style="margin-bottom:0;"><em>My golden rule:</em> stay on the lowest dose that is still working, for as long as it keeps working. Don't titrate up just because you can - it costs more, and if you max out early, where do you go from there?</p>
     </div>
-    <div class="callout gold" style="margin-top:20px;">
+    <h4 style="text-align:center;margin-top:30px;color:var(--eucalyptus-dark);">The Australian titration schedule</h4>
+    <div class="table-scroll" style="margin-top:12px;max-width:820px;margin-left:auto;margin-right:auto;">
+      <table>
+        <thead><tr><th>Step (hold ~4 weeks each)</th><th>Semaglutide / Radiant Slim</th><th>Tirzepatide / Radiant Trim</th></tr></thead>
+        <tbody>
+          <tr><td>Month 1 - starting dose</td><td class="dose">0.25 mg weekly</td><td class="dose">2.5 mg weekly</td></tr>
+          <tr><td>Month 2</td><td class="dose">0.5 mg</td><td class="dose">5 mg</td></tr>
+          <tr><td>Month 3</td><td class="dose">1.0 mg</td><td class="dose">7.5 mg</td></tr>
+          <tr><td>Month 4</td><td class="dose">1.7 mg</td><td class="dose">10 mg</td></tr>
+          <tr><td>Month 5</td><td class="dose">2.4 mg</td><td class="dose">12.5 mg</td></tr>
+          <tr><td>Month 6 - top dose</td><td class="dose">2.4 mg (max)</td><td class="dose">15 mg (max)</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p style="font-size:.86rem;color:var(--eucalyptus-dark);text-align:center;margin-top:12px;font-style:italic;max-width:760px;margin-left:auto;margin-right:auto;">Step up roughly every 4 weeks, and only if you need to. Ozempic (diabetes) caps at 2mg; Wegovy (weight) at 2.4mg. Same golden rule as retatrutide - hold the lowest dose that's still working.</p>
+
+    <div class="callout gold" style="margin-top:26px;">
       <h4>On the horizon - Cagrilintide &amp; the "triples"</h4>
       <p>The next wave (CagriSema = cagrilintide + semaglutide, and triple agonists like retatrutide) is showing 20-25%+ weight loss in trials by stacking extra hormone pathways. Not in Australia yet - but it shows where this is heading. For now, optimise the journey you're on. <em>(Cagrilintide is in the catalogue below as Slim Beau.)</em></p>
     </div>
